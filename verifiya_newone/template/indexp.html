@@ -1,0 +1,748 @@
+
+<!DOCTYPE html>
+<html>
+
+{% load static %}
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="{% static 'images/fevicon.png' %}" type="image/x-icon">
+    <title>verifiya</title>
+  
+    <!-- Bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+  
+    <!-- Fonts style -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Owl slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!-- Nice select -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" />
+    <!-- Font awesome style -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" />
+  
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.scss' %}" />
+
+    <!-- Responsive style -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+    {% block extra_head %}
+    {% endblock %}
+  </head>
+
+  <body>
+    {% block content %}
+    <div class="hero_area">
+      <div class="hero_bg_box">
+        <img src="{% static 'images/hero-bg.jpg' %}" alt="Hero Background">
+      </div>
+      <!-- header section starts -->
+      <header class="header_section">
+        <div class="header_top">
+          <div class="container-fluid header_top_container">
+            <div class="contact_nav">
+              <a href="#">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Location</span>
+              </a>
+              <a href="tel:+918989811258">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>Call: +91 8989811258</span>
+              </a>
+              <a href="mailto:bugblack185@gmail.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>bugblack185@gmail.com</span>
+              </a>
+            </div>
+            <div class="social_box">
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="header_bottom">
+          <div class="container-fluid">
+
+            <nav class="navbar navbar-expand-lg custom_nav-container">
+              <a class="navbar-brand" href="{% url 'home' %}">
+                <img src="{% static 'images/logo.png' %}" alt="Logo" />
+              </a>
+  
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""></span>
+              </button>
+  
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'Services' %}">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'team' %}">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}" >Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.html">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                      <span>Login</span>
+                    </a>
+                  </li>
+                  <form class="form-inline justify-content-center" action="" method="GET">
+                    <button class="btn my-2 my-sm-0 nav_search-btn" type="submit">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </form>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- header section ends -->
+      <!-- slider section -->
+<section class="slider_section ">
+    <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-10 col-md-11 mx-auto">
+                <div class="detail-box">
+                  <h1>
+                    Welcome to <br>
+                    The Verifiya <br>
+                    Software Solutions
+                  </h1>
+                  <p>
+                    Established in 2022, <strong>Verifiya</strong> is a premier provider of <strong>custom software solutions</strong>, 
+                    enhancing efficiency and driving innovation with cutting-edge technologies tailored to your business needs.
+                  </p>
+                  <div class="btn-box">
+                    <a href="contact.html" class="btn1">
+                      Contact Us
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-10 col-md-11 mx-auto">
+                <div class="detail-box">
+                  <h1>
+                    Welcome to <br>
+                    The Verifiya <br>
+                    Software Solutions
+                  </h1>
+                  <p>
+                    Verifiya excels in web development, logo design, video editing, SEO marketing,
+                    and game design, merging technology and creativity for standout digital success.
+                  </p>
+                  <div class="btn-box">
+                    <a href="contact.html" class="btn1">
+                      Contact Us
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-10 col-md-11 mx-auto">
+                <div class="detail-box">
+                  <h1>
+                    Welcome to <br>
+                    The Verifiya <br>
+                    Software Solutions
+                  </h1>
+                  <p>
+                    Verifiya, a leader in software solutions since 2022, excels in custom development and innovative tech,
+                    boosting efficiency and productivity with tailored, cutting-edge solutions for unique business challenges.
+                  </p>
+                  <div class="btn-box">
+                    <a href="contact.html" class="btn1">
+                      Contact Us
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel_btn-box">
+        <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- end slider section -->
+  <!-- service section -->
+<section class="service_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2 class="">
+          Our Services
+        </h2>
+        <p class="col-lg-8 px-0">
+          Top-Rated Freelance Expertise with Verifiya's Precision
+        </p>
+      </div>
+      <div class="service_container">
+        <div class="carousel-wrap">
+          <div class="service_owl-carousel owl-carousel">
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="{% static 'images/s1.png' %}" alt="Graphic Design & Arts" />
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Professional Graphic Design & Arts
+                  </h5>
+                  <p>
+                    Our designs not only captivate your audience but also align with the latest trends in aesthetics, ensuring your brand remains modern and competitive.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="{% static 'images/s4.png' %}" alt="Custom Web Development" />
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Custom Web Development Solutions
+                  </h5>
+                  <p>
+                    We deliver websites that are optimized for both user experience and search engine visibility, ensuring high performance and smooth user interaction.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="{% static 'images/s6.png' %}" alt="SEO & Digital Marketing" />
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Expert SEO & Digital Marketing Services
+                  </h5>
+                  <p>
+                    We ensure that your website ranks for relevant keywords, attracts more visitors, and ultimately drives more leads and sales for your business.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="{% static 'images/s1.png' %}" alt="Video Editing" />
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    High-Quality Video Editing for Digital Platforms
+                  </h5>
+                  <p>
+                    We enhance your raw footage to create engaging and shareable video content that aligns with your brand's goals and boosts your digital presence.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="{% static 'images/s4.png' %}" alt="Logo Design" />
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Creative and Memorable Logo Design
+                  </h5>
+                  <p>
+                    Our logos are designed to be timeless, unique, and versatile, ensuring they look great in any format, from business cards to billboards.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="{% static 'images/s6.png' %}" alt="Data Analysis & Insights" />
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Data Analysis & Insights for Business Growth
+                  </h5>
+                  <p>
+                    With our data analysis Services, we help businesses make informed decisions by transforming raw data into actionable insights. Using advanced tools and methodologies, we uncover patterns, trends, and key metrics that help optimize your business operations.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href='Services.html'>
+          Read More
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- end service section -->
+  <!-- about section -->
+<section class="about_section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5 offset-md-1">
+          <div class="detail-box pr-md-2">
+            <div class="heading_container">
+              <h2>
+                About Us
+              </h2>
+            </div>
+            <p class="detail_p_mt">
+              Verifiya is a trusted, full-service software company known for its expertise in <strong>custom logo design</strong>, <strong>game development</strong>, <strong>video editing</strong>, <strong>SEO marketing</strong>, and <strong>professional art Services</strong>. Our team of expert designers creates logos that leave lasting impressions, building strong and memorable brand identities. With our game development Services, we deliver immersive, interactive gaming experiences designed to engage users deeply.
+            </p>
+            <a href="about" class="">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 px-0">
+          <div class="img-box">
+            <img src="{% static 'images/about-img.jpg' %}" class="box_img" alt="About Us Image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- team section -->
+<section class="team_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Our Team
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, non odio tincidunt ut ante, lorem a euismod suspendisse vel, sed quam nulla mauris
+          iaculis. Erat eget vitae malesuada, tortor tincidunt porta lorem lectus.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 mx-auto">
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/t1.jpg' %}" alt="Team Member 1">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Martin Anderson
+              </h5>
+              <h6 class="">
+                Supervisor
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mx-auto">
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/t2.jpg' %}" alt="Team Member 2">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Denny Butler
+              </h5>
+              <h6 class="">
+                Supervisor
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mx-auto">
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/t3.jpg' %}" alt="Team Member 3">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Nathan Mcpherson
+              </h5>
+              <h6 class="">
+                Supervisor
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end team section -->
+  <!-- contact section -->
+<section class="contact_section ">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 px-0">
+          <div class="img-box">
+            <img src="{% static 'images/contact-img.jpg' %}" class="box_img" alt="Contact Image">
+          </div>
+        </div>
+        <div class="col-md-5 mx-auto">
+          <div class="form_container">
+            <div class="heading_container heading_center">
+              <h2>Get In Touch</h2>
+            </div>
+            
+            <!-- Use Django's form handling -->
+            <form method="POST" action="contact.html">
+              {% csrf_token %}
+              <div class="form-row">
+                <div class="form-group col">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-lg-6">
+                  <input type="text" name="phone" class="form-control" placeholder="Phone Number" required />
+                </div>
+                <!--<div class="form-group col-lg-6">
+                  <select name="service" class="form-control wide" required>
+                    <option value="">Select Service</option>
+                    <option value="service1">Service 1</option>
+                    <option value="service2">Service 2</option>
+                    <option value="service3">Service 3</option>
+                  </select>
+                </div>-->
+              </div>
+              <div class="form-row">
+                <div class="form-group col">
+                  <input type="email" name="email" class="form-control" placeholder="Email" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col">
+                  <textarea name="message" class="form-control message-box" placeholder="Message" required></textarea>
+                </div>
+              </div>
+              <div class="btn_box">
+                <button type="submit">
+                  SEND
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
+  <!-- client section -->
+<!-- client section -->
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>Testimonial</h2>
+        <hr>
+      </div>
+      
+      <!-- Carousel -->
+      <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-lg-7 col-md-9 mx-auto">
+                <div class="client_container">
+                  <div class="img-box">
+                    <img src="{% static 'images/client.jpg' %}" alt="Client Image">
+                  </div>
+                  <div class="detail-box">
+                    <h5>Jone Mark</h5>
+                    <p>
+                      Editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident.
+                    </p>
+                    <span>
+                      <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-7 col-md-9 mx-auto">
+                <div class="client_container">
+                  <div class="img-box">
+                    <img src="{% static 'images/client.jpg' %}" alt="Client Image">
+                  </div>
+                  <div class="detail-box">
+                    <h5>Jone Mark</h5>
+                    <p>
+                      Editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident.
+                    </p>
+                    <span>
+                      <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-7 col-md-9 mx-auto">
+                <div class="client_container">
+                  <div class="img-box">
+                    <img src="{% static 'images/client.jpg' %}" alt="Client Image">
+                  </div>
+                  <div class="detail-box">
+                    <h5>Jone Mark</h5>
+                    <p>
+                      Editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident.
+                    </p>
+                    <span>
+                      <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+        <!-- Carousel Controls -->
+        <div class="carousel_btn-box">
+          <a class="carousel-control-prev" href="#carouselExample2Controls" role="button" data-slide="prev">
+            <span>
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExample2Controls" role="button" data-slide="next">
+            <span>
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <!-- end client section -->
+  <!-- info section -->
+<section class="info_section ">
+    <div class="container">
+      <div class="info_top">
+        <div class="row">
+          <div class="col-md-3">
+            <a class="navbar-brand" href="{% url 'index' %}">
+              verifiya
+            </a>
+          </div>
+          <div class="col-md-5">
+            <div class="info_contact">
+              <a href="#">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="tel:+918989811258">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  +91 8989811258
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="social_box">
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="info_bottom">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="info_detail">
+              <h5>
+                Company
+              </h5>
+              <p>
+                Verifiya Technexus,<br>
+                UP to Rajwadi Restaurant,<br>
+                near Patnipura Square,<br>
+                Indore 452011, Madhya Pradesh
+              </p>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6">
+            <div class="info_form">
+              <h5>
+                NEWSLETTER
+              </h5>
+              <form action='subscribe_newsletter' method="post">
+                {% csrf_token %}
+                <input type="email" name="email" placeholder="Enter Your Email" required />
+                <button type="submit">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6">
+            <div class="info_detail">
+              <h5>
+                Services
+              </h5>
+              <p>
+                Offering Design & Arts, Web Development, SEO Marketing, Video Editing, Data Analysis, and Logo Design to enhance your brand's digital presence.
+              </p>
+            </div>
+          </div>
+  
+          <div class="col-lg-2 col-md-6">
+            <div class="">
+              <h5>
+                Useful links
+              </h5>
+              <ul class="info_menu">
+                <li>
+                  <a href="{% url 'home' %}">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="about">
+                    about.html
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'Services' %}">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'team' %}">
+                    Team
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'contact' %}">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end info_section -->
+  <!-- footer section -->
+<footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> Verifiya. All rights reserved.
+      </p>
+    </div>
+  </footer>
+    {% endblock %}
+  <!-- JavaScript to dynamically update the year -->
+  <script type="text/javascript">
+    document.getElementById("displayYear").innerHTML = new Date().getFullYear();
+  </script>
+  <!-- end footer section -->
+  <!-- jQuery -->
+<script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+    crossorigin="anonymous"></script>
+
+<!-- Bootstrap JS -->
+<script src="{% static 'js/bootstrap.js' %}"></script>
+
+<!-- Owl Carousel CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- jQuery Nice Select CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" 
+    integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" 
+    crossorigin="anonymous"></script>
+
+<!-- Custom JS -->
+<script src="{% static 'js/custom.js' %}"></script>
+
+<!-- Google Maps API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  
+  
+    </div>
+</body>
+  
+  

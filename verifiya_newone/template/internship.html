@@ -1,0 +1,68 @@
+<!-- myapp/templates/internship_application.html -->
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Internship Application Form
+      </title>
+    <link rel="stylesheet" href="{% static 'css/internship.css' %}">
+</head>
+<body>
+    {% block content %}
+    <div class="form-container">
+        <h2>Internship Application</h2>
+        
+        <form method="POST" enctype="multipart/form-data" id="internshipForm">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="full_name">Full Name</label>
+                {{ form.full_name }}
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email ID</label>
+                {{ form.email }}
+            </div>
+            
+            <div class="form-group">
+                <label for="sex">Sex</label>
+                {{ form.sex }}
+            </div>
+
+            <div class="form-group">
+                <label for="whatsapp_number">WhatsApp Number</label>
+                {{ form.whatsapp_number }}
+            </div>
+
+            <div class="form-group">
+                <label for="college_name">College Name</label>
+                {{ form.college_name }}
+            </div>
+
+            <div class="form-group">
+                <label for="qualification">Qualification</label>
+                {{ form.qualification }}
+            </div>
+
+            <div class="form-group">
+                <label for="last_qualification_year">Last Qualification Year</label>
+                {{ form.last_qualification_year }}
+            </div>
+
+            <div class="form-group">
+                <label for="resume">Upload Resume</label>
+                <input type="file" name="resume" id="resume" required>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="{% static 'js/internship.js' %}"></script>
+    {% endblock %}
+</body>
+</html>
